@@ -1,14 +1,10 @@
-*{
-	margin:0;
-	padding:0;
-}
 body{
 	background:#000;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 	font-size:15px;
 	color: #fff;
 	text-transform:uppercase;
-	overflow-x:hidden;
+	overflow:hidden;
 }
 .oe_overlay{
 	background:#000;
