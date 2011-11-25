@@ -3,7 +3,6 @@ body{
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 	font-size:15px;
 	color: #fff;
-	text-transform:uppercase;
 	overflow:hidden;
 }
 .oe_overlay{
@@ -22,6 +21,7 @@ ul.oe_menu{
 	 padding-left: 0;
 	width:560px;
 	clear:both;
+	text-transform:uppercase;
 }
 ul.oe_menu > li{
 	width:112px;
