@@ -19,6 +19,7 @@ ul.oe_menu{
 	list-style:none;
 	position:absolute;
 	margin:30px 0px 0px 40px;
+	 padding-left: 0;
 	width:560px;
 	clear:both;
 }
@@ -59,7 +60,7 @@ ul.oe_menu div{
 	width:498px;
 	height:180px;
 	padding:30px;
-	display:none;
+	display:none;	
 }
 ul.oe_menu div ul li a{
 	text-decoration:none;
@@ -81,6 +82,7 @@ ul.oe_menu li ul{
 	float:left;
 	width: 150px;
 	margin-right:10px;
+	padding-left:0px;
 }
 li.oe_heading{
 	color:#aaa;
@@ -125,9 +127,10 @@ span.reference{
 				font-size:75px;
 				text-align:right;
 				position:absolute;
-				right:50px;
+				right:41px;
 				top:20px;
 				font-weight:normal;
+				margin:0;
 				/*text-shadow:  0 0 3px #0096ff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0096ff, 0 0 70px #0096ff, 0 0 80px #0096ff, 0 0 100px #0096ff, 0 0 150px #0096ff;
 			*/}
 			h1 span{
@@ -138,7 +141,8 @@ span.reference{
 			h2{
 				position:absolute;
 				top:220px;
-				left:50px;
+				left:40px;
 				font-size:40px;
 				font-weight:normal;
+				margin:0;
 			}
