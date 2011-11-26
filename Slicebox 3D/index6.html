@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   
+   <head>
+        <title>Sesi&oacute;n y edici&oacute;n fotogr&aacute;fica</title>
+        
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<meta name="Author" content="Original Web Design"/>
+		<meta name="description" content="descripci&oacute;n de los distintos servicios multimedia que se ofrecen: edici&oacute;n de video, edici&oacute;n fotogr&aacute;fica, edici&oacute;n 3D, dise&ntilde;o de logotipos, dise&ntilde;o de imagen corporativa y procesos de animaci&oacute;n" />
+		<meta name="keywords" content="multimedia,edici&oacute;n,video,fotogr&aacute;fica,3D,dise&ntilde;o,logotipos,imagen,corporativa,animaci&oacute;n"/>
+		<meta name="robots" content="index, follow,all"/>
+		<meta name="classification" content="Global"/>
+		<meta name="resource-type" content="document"/>
+		<meta name="distribution" content="Global"/>
+		<meta name="rating" content="General"/>
+		<meta name="revisit-after" content="15 days"/>
+		
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Volkhov:400italic,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.13303.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="#"><span>&laquo; Back</span></a>
+				<span class="right_ab">
+					<a id="sb-note" style="display:none;"><span>Nota: se recomienda abrir esta p&aacute;gina con Chrome o Safari para observar el efecto 3D.</span></a>
+					<a href="#"><strong>Inicio</strong></a>
+				</span>
+			</div>
+			<h1>Logotipos <span>Tratamiento de imagen corporativa, diseño y elaboraci&oacute;n</span></h1>
+			
+			<div class="line"></div>
+			<div class="more">
+				<ul>
+					<li>Servicios complementarios:</li>
+					<li><a href="index.html">Video</a></li>
+					<li><a href="index2.html">Animaci&oacute;n 3D</a></li>
+					<li><a href="index5.html">Fotograf&iacute;a</a></li>
+					<li class="selected"><a href="index6.html">Logotipos</a></li>
+				</ul>
+			</div>
+			<div id="sb-slider" class="sb-slider">
+				<img src="images/1.jpg" title="Creative Lifesaver"/>
+				<img src="images/2.jpg" title="Honest Entertainer"/>
+				<img src="images/3.jpg" title="Brave Astronaut"/>
+				<img src="images/4.jpg" title="Affectionate Decision Maker"/>
+				<img src="images/5.jpg" title="Faithful Investor"/>
+				<img src="images/6.jpg" title="Groundbreaking Artist"/>
+				<img src="images/7.jpg" title="Selfless Philantropist"/>
+			</div>
+			<div id="backg">
+				<embed width="100%" height="100%" wmode="opaque" quality="high" src="fla/agua3.swf" scale="exactfit" />
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$('#sb-slider').slicebox({
+					slicesCount			: 15,
+					sequentialRotation	: true,
+					sequentialFactor	: 50,
+					speed3d				: 250
+				});
+				
+				if( !Modernizr.csstransforms3d ) {
+					$('#sb-note').show();
+					
+					$('body').append(
+						$('script').attr( 'type', 'text/javascript' ).attr( 'src', 'js/jquery.easing.1.3.js' )
+					);
+				}	
+			});
+		</script>
+	</body>
+</html>	
