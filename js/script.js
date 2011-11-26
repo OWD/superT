@@ -1,4 +1,6 @@
 
+document.selectores={};
+
 var instrumentalizeMenuItems=(function()
 {
     var $oe_menu		= $('#oe_menu');
