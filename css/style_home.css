@@ -18,7 +18,7 @@ ul.oe_menu{
 	list-style:none;
 	position:absolute;
 	margin:30px 0px 0px 40px;
-	 padding-left: 0;
+	padding-left: 0;
 	width:560px;
 	clear:both;
 	text-transform:uppercase;
@@ -62,6 +62,18 @@ ul.oe_menu div{
 	padding:30px;
 	display:none;	
 }
+
+ul.oe_menu div.except{
+	background:#000;
+	text-align:center;
+}
+
+ul.oe_menu div.except img{
+	border:2px solid red;
+	width:50%;
+	float:left;
+}
+
 ul.oe_menu div ul li a{
 	text-decoration:none;
 	color:#222;
@@ -84,6 +96,7 @@ ul.oe_menu li ul{
 	margin-right:10px;
 	padding-left:0px;
 }
+
 li.oe_heading{
 	color:#aaa;
 	font-size:16px;
@@ -127,7 +140,7 @@ span.reference{
 				font-size:75px;
 				text-align:right;
 				position:absolute;
-				right:41px;
+				right:43px;
 				top:20px;
 				font-weight:normal;
 				margin:0;
