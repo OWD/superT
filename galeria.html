@@ -34,11 +34,12 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-	<script src="js/libs/modernizr-2.0.6.min.js"></script>
-	
+<!--	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+-->	
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Volkhov:400italic,700' rel='stylesheet' type='text/css' />
-		<script type="text/javascript" src="js/modernizr.custom.13303.js"></script>
+
+    <script type="text/javascript" src="js/modernizr.custom.13303.js"></script>
 
 </head>
 
@@ -74,10 +75,10 @@
 				<img src="images/6.jpg" title="Groundbreaking Artist"/>
 				<img src="images/7.jpg" title="Selfless Philantropist"/>
 			</div>
-			<div id="backg">
+<!--			<div id="backg">
 				<embed width="100%" height="100%" wmode="opaque" quality="high" src="fla/clock.swf" scale="exactfit" />
 			</div>	
-	
+-->	
 	</div>
 	
     <footer>	
@@ -85,8 +86,8 @@
     </footer>
   </div> <!--! end of #container -->
   
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slicebox.min.js"></script>
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+ <script type="text/javascript" src="js/jquery.slicebox.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				
@@ -113,9 +114,8 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
@@ -141,7 +141,7 @@
   
   <script type="text/javascript">
   $(function() {
-	instrumentalizeMenuItems();
+//	instrumentalizeMenuItems();
   });
   </script>
   
