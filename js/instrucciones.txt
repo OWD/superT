@@ -1,0 +1,26 @@
+boiler template limpito
+Style propio de la pagina
+     <!-- CSS concatenated and minified via ant build script-->
+     
+        <link rel="stylesheet" href="css/NOMBRE DE LA PAGINA.css">
+     <!--end CSS-->
+     
+metemos lo de cufon
+        <script src="js/cufon-yui.js" type="text/javascript"></script>
+        <!-- fuentes generadas desde la pagina de cufon  comprobar el nombre de la fuente dentro del archivo en fontfamily-->
+	
+        <script src="js/Acorn_Initials_400.font.js" type="text/javascript"></script>
+	<script src="js/Aller.font.js" type="text/javascript"></script>
+        
+        <!-- script que vincula pagina.selector con fuente-->
+	<script src="js/fuentesSelector.js" type="text/javascript"></script>
+
+metemos el google font
+        <!-- link obtenido de la pagina de google fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>	
+        <!-- en las css que queramos debemos poner la font family-->
+metemos el contenido body html
+    comprobar que dentro de ese contenido que has pegado no hay ningun evento JS
+    
+    el resto miralo en index.html
+

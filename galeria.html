@@ -34,17 +34,19 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-<!--	<script src="js/libs/modernizr-2.0.6.min.js"></script>
--->	
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Volkhov:400italic,700' rel='stylesheet' type='text/css' />
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/Acorn_Initials_400.font.js" type="text/javascript"></script>
+	<script src="js/Aller.font.js" type="text/javascript"></script>
+	<script src="js/fuentesSelector.js" type="text/javascript"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Volkhov:400italic,700' rel='stylesheet' type='text/css' />
 
     <script type="text/javascript" src="js/modernizr.custom.13303.js"></script>
 
 </head>
 
 <body>
-
   <div id="container">
     <header>
 		<div class="header">
@@ -75,18 +77,24 @@
 				<img src="images/6a.jpg" title="Groundbreaking Artist"/>
 				<img src="images/7a.jpg" title="Selfless Philantropist"/>
 			</div>
-<!--			<div id="backg">
-				<embed width="100%" height="100%" wmode="opaque" quality="high" src="fla/clock.swf" scale="exactfit" />
-			</div>	
--->	
-	</div>
+	<embed id="backg" width="100%" height="100%" wmode="opaque" quality="high" src="fla/clock.swf" scale="exactfit" />
+    </div>
 	
     <footer>	
 	
     </footer>
   </div> <!--! end of #container -->
-  
- <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
  <script type="text/javascript" src="js/jquery.slicebox.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
@@ -111,23 +119,14 @@
 		</script>
 
 
-  <!-- JavaScript at the bottom for fast page loading -->
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.js"><\/script>')</script>
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
 
 	
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+ //     load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
 

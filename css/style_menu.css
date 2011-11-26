@@ -1,3 +1,11 @@
+body{
+	background:#000 url(../images/stripe.gif) repeat top left;
+	margin:0;
+	padding:0;
+}
+
+
+
 .cc_menu{
 	width:700px; /*140px * 5*/
 	height:600px;
@@ -87,4 +95,35 @@ span.cc_back{
 	right:10px;
 	cursor:pointer;
 	color:#ddd;
+}
+   
+   
+
+span.reference{
+	font-family:Arial;
+	text-transform:uppercase;
+	position:fixed;
+	right:95px;
+	bottom:10px;
+	font-size:11px;
+	text-shadow:1px 1px 1px #000;
+}
+
+span.reference a{
+	color:#aaa;
+	text-decoration:none;
+	margin-right:20px;
+}
+
+span.reference a:hover{
+	color:#ddd;
+}
+
+.title{
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:91px;
+	height:600px;
+	background:transparent url(../images/title.png) no-repeat top left;
 }
