@@ -74,6 +74,13 @@ ul.oe_menu div.except img{
 	float:left;
 }
 
+ul.oe_menu div.except p{
+	text-align:justify; 
+	width:40%; 
+	float:right; 
+	text-transform:none;
+}
+
 ul.oe_menu div ul li a{
 	text-decoration:none;
 	color:#222;
