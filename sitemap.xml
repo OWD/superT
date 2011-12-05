@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+<!-- Created by phpSitemapNG version 1.5.3 -->
+<!-- Last update of sitemap 2011-12-05T08:58:58+08:00 -->
+<url>
+<loc>http://originalwebdesign.nixiweb.com/</loc>
+<lastmod>2011-12-05T08:58:35+08:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://originalwebdesign.nixiweb.com/galeria.html</loc>
+<lastmod>2011-12-05T08:58:36+08:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://originalwebdesign.nixiweb.com/menu.html</loc>
+<lastmod>2011-12-05T08:58:36+08:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>

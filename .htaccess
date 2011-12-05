@@ -279,8 +279,6 @@ FileETag None
 # BrowserMatch "Opera" !brokenvary
 # SetEnvIf brokenvary 1 force-no-vary
 
-
-
 # ----------------------------------------------------------------------
 # Cookie setting from iframes
 # ----------------------------------------------------------------------
@@ -501,3 +499,9 @@ Options -Indexes
 <IfModule php5_module>
 	php_value session.cookie_httponly true
 </IfModule>
+#for automatic open a file 
+
+<IfModule dir_module>
+DirectoryIndex index.php index.html 
+</IfModule>
+
