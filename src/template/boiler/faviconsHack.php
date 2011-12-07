@@ -1,6 +1,7 @@
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" size="57x57" href="apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" size="72x72" href="apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" size="114x114" href="apple-touch-icon-114x114-precomposed.png">
 <?php
 /* debes crear el icono con los tres tipos de tamaños que ponen
  los tres primeros son para telefonos iphone, tablets, android , lo cubre todo
