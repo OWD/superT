@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+/*los navegadores cargan las fuentes cada uno de una manera distinta como pone aqui:
+*Google Chrome
+*Chrome renders the rest of the page, but until the web font has loaded, it displays a blank space in place of the text that uses the font.
+*Mozilla Firefox
+*Firefox first displays the text in the default font, and then re-renders text in the web font once it has loaded. (This behavior is known as a “flash of unstyled text.”)
+*Apple Safari
+*Safari renders the rest of the page, but until the web font has loaded, it displays a blank space in place of the text that uses the font.
+*Microsoft Internet Explorer
+*Internet Explorer renders the rest of the page, but until the web font has loaded, it displays a blank space in place of the text that uses the font.
+*Note: For best display in IE, make the stylesheet <link> tag the first element in the HTML <head> section. In IE, if the link is placed after <script> tags, the entire page will block and not display anything until the web font is loaded.
+*
+* con el Web Font loader de google podemos conseguir que todos tengan el mismo comportamiento , esto es el que tiene Firefox
+*
+*/
+
+.wf-loading  {
+   font-family: serif
+}
+.wf-inactive {
+   font-family: serif
+}
+
+/*si deseas que mientras las fuentes no esten cargadas que no se vea la pagina tambien lo puedes hacer
+* esto se hace cambiando las lineas anteriores por estas otras
+*
+* .wf-loading body
+* {
+*	display:none; (esta linea la pones si no quieres que se vea NADA)
+* 	background-image: url('../img/loading.gif'); (esta linea la pones si quieres poner un gif de loading mientras
+* }
+* .wf-loading body div
+* {
+* 	display:none;
+* }
+*
+*
+*/
+
+/* aqui vemos como se usan los efectos, eso quiere decir que los textos a los que quieras aplicar una fuente
+* cargada con este método , es decir los que has puesto en el fichero /src/googleWebFontsLoader.php 
+* debes ponerles en font-family el nombre de la fuente que quieras, por ejemplo si 
+* quieres ponerle una fuente llamada Tangerine , a un elemento que esta en un a en una li del id="fulano"
+* pues tienes que poner en la css lo siguiente:
+*	#fulano li a 
+*	{
+*  		font-family: 'Tangerine', serif
+*	}
+* recuerda siempre con la fuente serif como fallback porsi.
+*/

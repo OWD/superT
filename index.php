@@ -1,48 +1,58 @@
 <?php 	
 // variables globales de php
-		require_once './src/configuracion.php';
+		include_once './src/configuracion.php';
 //variables de la pagina
-		$descripcion		="aqui pones la descripccion de la pagina de presencia";
+		$descripcion		= "aqui pones la descripccion de la pagina de presencia";
 		$estiloPropioPagina = "style_home.css";
-		$tituloPagina		="SuperT";
+		$tituloPagina		= "SuperT";
 ?>
 <!doctype html>
-<?php require_once './src/template/boiler/IEcompatibilityHacks.php';?>
+<?php 				
+			include_once './src/template/boiler/IEcompatibilityHacks.php';
+?>
 <head>
 <meta charset="utf-8">
-<?php require_once './src/template/boiler/fastDnsLibraryOptimization.php';?>
-<title><?php echo $tituloPagina?></title>
-<meta name="description" content="<?php echo ($descripcion);?>">
-<meta name="author" content="<?php echo ($autor)?>">
-<?php require_once './src/template/boiler/movileOptimization.php';?>
-<?php require_once './src/template/boiler/faviconsHack.php';?>
-<!-- CSS: implied media=all -->
+<?php 
+			include_once './src/template/boiler/fastDnsLibraryOptimization.php';
+?>
+<?php 
+			include_once './src/googleWebFontsLoader.php';
+?>
+<title><?php
+			 echo ($tituloPagina);
+?></title>
+<meta name="description" content="<?php
+			 echo ($descripcion);
+?>">
+<meta name="author" content="<?php
+			 echo ($autor);
+?>">
+<?php 
+			include_once './src/template/boiler/movileOptimization.php';
+?>
+<?php 
+			include_once './src/template/boiler/faviconsHack.php';
+?>
+										<!-- CSS: implied media=all -->
 <!-- CSS concatenated and minified via ant build script-->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/<?php echo ($estiloPropioPagina)?>">
-<!--end CSS-->
-<?php require_once './src/tutos/sitemap.php';?>
-<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="stylesheet" href="css/preBoilerStyle.css">
+<link rel="stylesheet" href="css/webfontTemplateStyles.css">
+<link rel="stylesheet" href="css/<?php 
+			echo ($estiloPropioPagina)
+?>">
+<link rel="stylesheet" href="css/postBoilerStyle.css">
+										<!--end CSS-->
+<?php 
+			include_once './src/tutos/sitemap.php';
+?>
 <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-<!-- All JavaScript at the bottom, except for Modernizr / Respond.
-Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
 <script src="js/libs/modernizr-2.0.6.min.js"></script>
-
-<script src="js/cufon-yui.js" type="text/javascript"></script>
-<script src="js/Acorn_Initials_400.font.js" type="text/javascript"></script>
-<script src="js/Aller.font.js" type="text/javascript"></script>
-<script src="js/fuentesSelector.js" type="text/javascript"></script>
-
-
-
-<link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
-
+<?php 
+			include_once './src/cufon.php';
+?>
 </head>
 
 <body>
-
 <div id="container">
 <header>
 <div class="bg_img"><img src="img/4.jpg" alt="" /></div>
@@ -207,7 +217,7 @@ inclusiones de Jquery ,jquery.min , modernizr -->
 
 <!-- end scripts-->
 
-<?php require_once './src/analytics.php';?>
+<?php include_once './src/analytics.php';?>
 
 
 
